@@ -79,6 +79,8 @@ const Projects = () => {
 
   return (
     <Box
+      component="section"
+      id="projects"
       sx={{
         py: 15,
         background: (theme) => theme.palette.mode === 'dark'

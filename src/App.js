@@ -1,7 +1,8 @@
 import React, { useState, useMemo } from 'react';
-import { ThemeProvider, createTheme, CssBaseline, GlobalStyles } from '@mui/material';
+import { ThemeProvider, createTheme, CssBaseline, Box } from '@mui/material';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
+import Chatbot from './components/Chatbot';
 
 const getDesignTokens = (mode) => ({
   palette: {
@@ -74,55 +75,27 @@ const getDesignTokens = (mode) => ({
   components: {
     MuiCssBaseline: {
       styleOverrides: {
+        '*': {
+          margin: 0,
+          padding: 0,
+          boxSizing: 'border-box',
+        },
+        html: {
+          scrollBehavior: 'smooth',
+          WebkitFontSmoothing: 'antialiased',
+          MozOsxFontSmoothing: 'grayscale',
+        },
         body: {
-          transition: 'all 0.3s linear',
-        },
-      },
-    },
-    MuiPaper: {
-      styleOverrides: {
-        root: {
-          transition: 'all 0.3s linear',
-        },
-      },
-    },
-    MuiButton: {
-      styleOverrides: {
-        root: {
-          borderRadius: 8,
-          textTransform: 'none',
-          fontWeight: 500,
-          fontFamily: '"Fira Code", monospace',
-          padding: '10px 20px',
-          transition: 'all 0.3s ease-in-out',
-          '&:hover': {
-            transform: 'translateY(-2px)',
-          },
-        },
-        contained: {
-          background: mode === 'dark'
-            ? 'linear-gradient(45deg, #64ffda 30%, #ff79c6 90%)'
-            : 'linear-gradient(45deg, #2196f3 30%, #f50057 90%)',
-          boxShadow: mode === 'dark'
-            ? '0 3px 5px 2px rgba(100, 255, 218, .3)'
-            : '0 3px 5px 2px rgba(33, 150, 243, .3)',
-        },
-      },
-    },
-    MuiCard: {
-      styleOverrides: {
-        root: {
-          borderRadius: 12,
-          transition: 'all 0.3s linear',
-          backgroundColor: mode === 'dark' ? '#112240' : '#fff',
-          boxShadow: mode === 'dark'
-            ? '0 10px 30px -15px rgba(2,12,27,0.7)'
-            : '0 10px 30px -15px rgba(0,0,0,0.1)',
-          '&:hover': {
-            transform: 'translateY(-10px)',
-            boxShadow: mode === 'dark'
-              ? '0 20px 30px -15px rgba(2,12,27,0.7)'
-              : '0 20px 30px -15px rgba(0,0,0,0.2)',
+          margin: 0,
+          padding: 0,
+          width: '100%',
+          minHeight: '100vh',
+          overflowX: 'hidden',
+          '& #root': {
+            width: '100%',
+            minHeight: '100vh',
+            display: 'flex',
+            flexDirection: 'column',
           },
         },
       },
@@ -131,7 +104,7 @@ const getDesignTokens = (mode) => ({
 });
 
 function App() {
-  const [mode, setMode] = useState('dark');
+  const [mode, setMode] = useState('light');
   const theme = useMemo(() => createTheme(getDesignTokens(mode)), [mode]);
 
   const toggleColorMode = () => {
@@ -141,18 +114,28 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <GlobalStyles
-        styles={{
-          '*': {
-            transition: 'all 0.3s linear',
-          },
-          body: {
-            transition: 'background-color 0.3s linear',
-          },
+      <Box
+        sx={{
+          width: '100%',
+          minHeight: '100vh',
+          display: 'flex',
+          flexDirection: 'column',
+          overflowX: 'hidden',
         }}
-      />
-      <Navbar toggleColorMode={toggleColorMode} mode={mode} />
-      <Home />
+      >
+        <Navbar toggleColorMode={toggleColorMode} mode={mode} />
+        <Box
+          component="main"
+          sx={{
+            flex: 1,
+            width: '100%',
+            overflowX: 'hidden',
+          }}
+        >
+          <Home />
+        </Box>
+        <Chatbot />
+      </Box>
     </ThemeProvider>
   );
 }
