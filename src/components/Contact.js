@@ -5,7 +5,6 @@ import {
   Button,
   Box,
   IconButton,
-  useTheme,
 } from '@mui/material';
 import EmailIcon from '@mui/icons-material/Email';
 import GitHubIcon from '@mui/icons-material/GitHub';
