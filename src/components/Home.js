@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Container, Typography, Box, Button, Grid } from '@mui/material';
 import { motion } from 'framer-motion';
-import profilePic from '../assets/avataaars.png';
+import profilePic from '../assets/porfilee.jpg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Projects from './Projects';
