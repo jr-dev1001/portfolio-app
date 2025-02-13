@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   AppBar,
-  Box,
   IconButton,
   Typography,
   Paper,
@@ -47,7 +46,7 @@ const Navbar = ({ toggleColorMode, mode }) => {
               fontWeight: 500,
             }}
           >
-           <b><i>Welcome to the Void..!</i></b>
+            <b><i>Welcome to the Void..!</i></b>
           </Typography>
           <IconButton 
             onClick={toggleColorMode} 
