@@ -107,8 +107,8 @@ const Home = () => {
                   px: 2,
                 }}
               >
-                I'm a software engineer specializing in building exceptional digital experiences.
-                Currently, I'm focused on building accessible, human-centered products.
+               I'm a software engineer passionate about crafting intelligent and secure digital solutions.  
+               Currently, I'm focused on building scalable, AI-driven, and cybersecurity-enhanced systems that drive real-world impact.
               </Typography>
               <Button
                 variant="contained"
@@ -215,10 +215,8 @@ const Home = () => {
                     lineHeight: 1.7,
                   }}
                 >
-                  Hello! My name is Vamsi and I enjoy creating things that live on the internet. 
-                  My interest in web development started back in 2018 when I decided to try editing 
-                  custom Tumblr themes — turns out hacking together a custom reblog button taught 
-                  me a lot about HTML & CSS!
+                  Hello! My name is Vamsi, and I love building intelligent systems that make an impact.
+                  My interest in software development started back in 2022 when I first explored Linux scripting and automation—turns out tweaking configurations and optimizing workflows taught me a lot about programming and system design!
                 </Typography>
                 <Typography 
                   variant="body1" 
@@ -229,9 +227,10 @@ const Home = () => {
                     lineHeight: 1.7,
                   }}
                 >
-                  Fast-forward to today, and I've had the privilege of working at an advertising agency, 
-                  a start-up, a huge corporation, and a student-led design studio. My main focus these 
-                  days is building accessible, inclusive products and digital experiences.
+                 Fast-forward to today, I've had the opportunity to work on cutting-edge technologies in AI/ML,
+                  cybersecurity, and cloud computing. From optimizing machine learning models for edge devices to enhancing security through pentesting, 
+                  my journey has been a mix of innovation and problem-solving. 
+                 These days, my main focus is on building efficient, scalable, and secure solutions that bridge the gap between AI, cloud, and cybersecurity.
                 </Typography>
                 <Typography 
                   variant="body1" 

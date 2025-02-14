@@ -9,16 +9,17 @@ import LaunchIcon from '@mui/icons-material/Launch';
 import blogImage from '../assets/blog.png';
 import blockchainImage from '../assets/blockchain.png';
 import cineCriticImage from '../assets/cinecritic.png';
+import PoineerAgentImage from '../assets/poineeragent.png'
 
 const Projects = () => {
   const projects = [
     {
-      title: 'Blockchain Demo Using Node',
-      description: 'A comprehensive dashboard for managing online stores. Features include real-time analytics, inventory management, and sales tracking with beautiful data visualizations.',
-      image: blockchainImage,
-      demoLink: 'https://jr-dev1001.github.io/Blockchain-Demo-using-Node/',
-      githubLink: 'https://github.com/jr-dev1001/Blockchain-Demo-using-Node',
-      tags: ['React', 'Node.js', 'MongoDB', 'Express.js']
+      title : 'Poineer Agents',
+      description: 'This is a demostration of how AI agents works and how to implement it using python by taking an idea.',
+      image: PoineerAgentImage,
+      demoLink: 'https"//github.com/jr-dev1001/PoineerAgents',
+      githubLink: 'https"//github.com/jr-dev1001/PoineerAgents',
+      tags: ['python', 'streamlit', 'numpy', 'pandas']
     },
     {
       title: 'Cine Critic',
@@ -30,11 +31,19 @@ const Projects = () => {
     },
     {
       title: 'Blog Website',
-      description: 'A modern portfolio website. Features smooth animations, responsive design, and dynamic content loading.',
+      description: 'A modern Blog website. Features smooth animations, responsive design, and dynamic content loading.',
       image: blogImage,
       demoLink: 'https://www.jr-dev1001.xyz/',
-      githubLink: 'https://github.com/jr-dev1001/portfolio',
+      githubLink: 'https://github.com/jr-dev1001/Hacking-Odyssey.github.io',
       tags: ['Markdown', 'Jekyll', 'YAML', 'GitHub Pages']
+    },
+    {
+      title: 'Blockchain Demo Using Node',
+      description: 'A comprehensive dashboard for demonstration of blockchain.  Visualizations of nodes, hashing and data transperency using NodeJS .',
+      image: blockchainImage,
+      demoLink: 'https://jr-dev1001.github.io/Blockchain-Demo-using-Node/',
+      githubLink: 'https://github.com/jr-dev1001/Blockchain-Demo-using-Node',
+      tags: ['React', 'Node.js', 'MongoDB', 'Express.js']
     }
   ];
 
