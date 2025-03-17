@@ -9,26 +9,11 @@ import LaunchIcon from '@mui/icons-material/Launch';
 import blogImage from '../assets/blog.png';
 import blockchainImage from '../assets/blockchain.png';
 import cineCriticImage from '../assets/cinecritic.png';
-import PoineerAgentImage from '../assets/poineeragent.png'
+import PoineerAgentImage from '../assets/poineeragent.png';
+import ArAnnotationImage from '../assets/arannotation.png';
 
 const Projects = () => {
   const projects = [
-    {
-      title : 'Poineer Agents',
-      description: 'This is a demostration of how AI agents works and how to implement it using python by taking an idea.',
-      image: PoineerAgentImage,
-      demoLink: 'https"//github.com/jr-dev1001/PoineerAgents',
-      githubLink: 'https"//github.com/jr-dev1001/PoineerAgents',
-      tags: ['python', 'streamlit', 'numpy', 'pandas']
-    },
-    {
-      title: 'Cine Critic',
-      description: 'An intelligent chat application powered by machine learning. Supports real-time translation, sentiment analysis, and smart responses.',
-      image: cineCriticImage,
-      demoLink: 'https://tinyurl.com/cinecritic-demo',
-      githubLink: 'https://github.com/jr-dev1001/CineCritique',
-      tags: ['Angular','Ionic', 'Cordova', 'WebSocket', 'Android']
-    },
     {
       title: 'Blog Website',
       description: 'A modern Blog website. Features smooth animations, responsive design, and dynamic content loading.',
@@ -38,12 +23,36 @@ const Projects = () => {
       tags: ['Markdown', 'Jekyll', 'YAML', 'GitHub Pages']
     },
     {
+      title: 'Cine Critic',
+      description: 'A movie recommendation app powered by Ionic and machine learning. Supports real-time data.',
+      image: cineCriticImage,
+      demoLink: 'https://tinyurl.com/cinecritic-demo',
+      githubLink: 'https://github.com/jr-dev1001/CineCritique',
+      tags: ['Angular','Ionic', 'Cordova', 'WebSocket', 'Android']
+    },
+    {
+      title: 'AR Doodler',
+      description: 'A Unity-based Augmented Reality drawing application utilizing AR Foundation for mobile devices.',
+      image: ArAnnotationImage,
+      demoLink: 'https://jr-dev1001.github.io/AR-Annotations-Unity/',
+      githubLink: 'https://github.com/jr-dev1001/AR-Annotations-Unity',
+      tags: ['Unity','C#', 'AR Foundations', '3D models', 'Android']
+    },
+    {
+      title : 'Poineer Agents',
+      description: 'This is a demostration of how AI agents works and how to implement it using python by taking an idea.',
+      image: PoineerAgentImage,
+      demoLink: 'https"//github.com/jr-dev1001/PoineerAgents',
+      githubLink: 'https"//github.com/jr-dev1001/PoineerAgents',
+      tags: ['python', 'streamlit', 'numpy', 'pandas']
+    },
+    {
       title: 'Blockchain Demo Using Node',
       description: 'A comprehensive dashboard for demonstration of blockchain.  Visualizations of nodes, hashing and data transperency using NodeJS .',
       image: blockchainImage,
       demoLink: 'https://jr-dev1001.github.io/Blockchain-Demo-using-Node/',
       githubLink: 'https://github.com/jr-dev1001/Blockchain-Demo-using-Node',
-      tags: ['React', 'Node.js', 'MongoDB', 'Express.js']
+      tags: ['React', 'Node.js', 'Express.js']
     }
   ];
 
